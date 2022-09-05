@@ -1,0 +1,101 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #23283b;
+}
+
+body .display-area {
+  width: 100%;
+  margin: 10px 0;
+  font-size: xx-large;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: (minmax(40px, auto))[2];
+      grid-template-rows: repeat(2, minmax(40px, auto));
+  word-wrap: break-word;
+  padding-bottom: 10px;
+  border-bottom: 1px rgba(157, 0, 0, 0.596) solid;
+}
+
+body .display-area .currentInput {
+  text-align: right;
+  height: 35px;
+  line-height: 2;
+  word-wrap: break-word;
+  color: white;
+}
+
+body .display-area .answerScreen {
+  text-align: right;
+  height: 70px;
+  line-height: 3;
+  font-size: larger;
+  color: rgba(0, 157, 89, 0.87);
+}
+
+body .container {
+  margin: 100px 35px;
+  max-width: 350px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 5px;
+  border-radius: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: rgba(19, 19, 19, 0.5);
+}
+
+body .keypad-btns {
+  display: -ms-grid;
+  display: grid;
+  grid: repeat(5, 10px)/repeat(4, 60px);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  height: 150px;
+}
+
+body .keypad-btns button {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  font-size: x-large;
+  height: 25px;
+  margin: 3px;
+}
+
+body .keypad-btns .fun_btn {
+  background: #009a76;
+  color: black;
+  font-weight: bold;
+}
+
+body .keypad-btns .fun_btn:hover {
+  background-color: #009a94;
+}
+
+body .keypad-btns .num_btn:hover {
+  background-color: #5e96ad;
+}
+/*# sourceMappingURL=style.css.map */

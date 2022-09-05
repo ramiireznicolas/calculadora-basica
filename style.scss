@@ -1,0 +1,72 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #23283b;
+    .display-area{
+        width: 100%;
+        margin: 10px 0;
+        font-size: xx-large;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, minmax(40px, auto));
+        word-wrap: break-word;
+        padding-bottom: 10px;
+        border-bottom: 1px rgba(157, 0, 0, 0.596) solid;
+        .currentInput{
+            text-align: right;
+            height: 35px;
+            line-height: 2;
+            word-wrap: break-word;
+            color: white;
+        }
+        .answerScreen{
+            text-align: right;
+            height: 70px;
+            line-height: 3;
+            font-size: larger;
+            color: rgba(0, 157, 89, 0.87);
+        }
+    }
+
+    .container{
+        margin: 100px 35px;
+        max-width: 350px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 5px;
+        border-radius: 10px;
+        user-select: none;
+        background-color: rgba(19, 19, 19, 0.5);
+    }
+
+    .keypad-btns{
+        display: grid;
+        grid: repeat(5, 10px) / repeat(4, 60px);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        height: 150px;
+        button{
+            outline: none;
+            border: none;
+            border-radius: 2px;
+            font-size: x-large;
+            height: 25px;
+            margin: 3px;
+        }
+        .fun_btn{
+            background:#009a76;
+            color: black;
+            font-weight: bold;
+            &:hover{
+                background-color: #009a94;
+            }
+        }
+        .num_btn:hover{
+            background-color: #5e96ad;
+        }
+    }
+}
